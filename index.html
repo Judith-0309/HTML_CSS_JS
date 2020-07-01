@@ -1,85 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="style.css"> 
-        <title>CLIENT PHYSIQUE</title>
-        <script type="text/javascript"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Accueil Page BP">
+    <link rel="stylesheet" href="style.css">
+    <title>BP</title>
+</head>
 
-    </head>
-<body>
-           <header>
-            <div class="image">
-           <img src="img/BPlogo2.png" alt="logo BP" height="200px">
-           </div>
-           <h1>BANQUE DU PEUPLE</h1>       
-           </header>
-           <form action="index.html" method="POST">
-
-           <div class="container">
-	       <div class="Contain">
-            <h2>Particulier</h2>
-		        <label for="nom">Nom*</label>
-		        <input id="nom" name="nom" type="text"/>
-	             
-		        <label for="prenom">Prenom*</label>
-                <input id="prenom" name="prenom" type="text"/>
-                
-                <label for="Genre">Genre*</label>
-                    <select name="langage" id="langage"> 
-                        <option value="Selectionnez">Selectionnez*</option> 
-                        <option value="Homme">Homme</option>
-                        <option value="Femme">Femme</option>   
-                    </select>
-
-		        <label for="Email">Email</label>
-		        <input id="Email" name="Email" type="varchar"/>
-	
-		        <label for="Adresse">Adresse*</label>
-		        <input id="Adresse" name="Adresse" type="varchar"/>	
-	
-                <label for="Telephone">Telephone*</label>
-		        <input id="Telephone" name="Telephone" type="varchar"/>
-             </div>
-            <div class="section">
-                <label for="Profession">Profession*</label>
-		        <input id="Profession" name="Profession" type="text"/>
-      
-                <label for="Type_Compte">Type_Compte*</label>
-		           <select name="compte" id="compte"> 
-                   <option value="Selectionnez">Selectionnez</option> 
-                   <option value="Compte">Compte Xewal Simple</option>
-                   <option value="Compte Courant">Compte Courant</option>
-                   <option value="Compte Epargne">Compte Epargne</option>
-                   <option value="Compte Epargne">Compte bloque</option>
-            </select>
-  
-                <label for="Salaire actuel">Salaire</label>
-                <input id="Salaire actuel" name="Salaire actuel" type="double"/>
-         
-               <label for="informations employeur">informations employeur</label>
-               <input id="informations employeur" name="informations employeur" type="varchar"/>
-
-               <label for="identification">identification*</label>
-               <input id="identification" name="identification" type="varchar"/>
+<body> 
+    <nav>
+       <img src="img/bplogo.png" alt="BP logo" class="img" >
+       <h1>BANQUE DU PEUPLE</h1> 
+        <ul>
+            <li><a href="">Accueil</a></li> 
+            <li><a href="">Liste client</a></li> 
+            <li><a href="compte.html">Gestion Compte</a></li>    
+            <li>
+                <a href="">Ajout Client</a>   
+            <ul>
+            <li><a href="particulier.html">Particulier</a></li>
+            <li><a href="moral.html">Entreprise</a></li>  
+            </ul>
+            </li>
+            <li><a href="">Virement</a></li>    
+        </ul>   
+   </nav>
     
-               <label for="Numero de compte">Numero_Compte*</label>
-               <input id="Numero de compte" name="Numero de compte" type="numeric"/> 
-  
-            </div>
-            </div>
 
-            <div class="button">
-                <input type="submit" value="ENVOYER" onclick="return validate()"/>
-                <input type="reset" value="ANNULER"/>
-   
-            </div>
-          </form>
-
-        <script src="Js_form.js"></script>
-          
-    </body>
+    
+</body>
 </html>
-
